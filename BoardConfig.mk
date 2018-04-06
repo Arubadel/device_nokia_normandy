@@ -17,6 +17,8 @@
 
 include device/generic/msm7x27a/BoardConfigCommon.mk
 
+LOCAL_PATH := device/samsung/delos3geur
+
 ## Platform
 TARGET_BOOTLOADER_BOARD_NAME := msm7x27a
 
@@ -24,7 +26,10 @@ TARGET_BOOTLOADER_BOARD_NAME := msm7x27a
 TARGET_KERNEL_CONFIG := delos_defconfig
 
 ## Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/delos3geur/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
 ## OTA assert
 TARGET_OTA_ASSERT_DEVICE := delos3geur,GT-I8552
+
+#Fstab 
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/fstab.qcom

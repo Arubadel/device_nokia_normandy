@@ -12,7 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/delos3geur/overlay
+LOCAL_PATH := device/samsung/delos3geur
+
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 include device/generic/msm7x27a/msm7x27a.mk
 
@@ -22,9 +24,9 @@ PRODUCT_PACKAGES += \
 
 ## Splash screen
 PRODUCT_COPY_FILES += \
-    device/samsung/delos3geur/rootdir/initlogo.rle:root/initlogo.rle \
-    device/samsung/delos3geur/rootdir/initlogo_swa.rle:root/initlogo_swa.rle
-
+    $(LOCAL_PATH)/rootdir/initlogo.rle:root/initlogo.rle \
+    $(LOCAL_PATH)/rootdir/initlogo_swa.rle:root/initlogo_swa.rle \
+    $(LOCAL_PATH)/rootdir/fstab.qcom:root/fstab.qcom
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
