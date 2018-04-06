@@ -14,7 +14,7 @@
 
 DEVICE_PACKAGE_OVERLAYS += device/samsung/delos3geur/overlay
 
-include device/samsung/msm7x27a-common/msm7x27a.mk
+include device/generic/msm7x27a/msm7x27a.mk
 
 ## Build torch app
 PRODUCT_PACKAGES += \
