@@ -18,7 +18,7 @@
 include device/generic/msm7x27a/BoardConfigCommon.mk
 
 ## Platform
-TARGET_BOOTLOADER_BOARD_NAME := delos3geur
+TARGET_BOOTLOADER_BOARD_NAME := msm7x27a
 
 ## Kernel
 TARGET_KERNEL_CONFIG := delos_defconfig
