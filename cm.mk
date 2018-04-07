@@ -15,13 +15,13 @@
 ## Specify phone tech before including full_phone
 #$(call inherit-product, vendor/cm/config/gsm.mk)
 
-LOCAL_PATH := device/samsung/delos3geur
+DEVICE_PATH := device/samsung/delos3geur
 
 ## Inherit common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 ## Inherit device files
-$(call inherit-product, $(LOCAL_PATH)/delos3geur.mk)
+$(call inherit-product, $(DEVICE_PATH)/delos3geur.mk)
 
 ## Setup device configuration
 PRODUCT_NAME := cm_delos3geur
