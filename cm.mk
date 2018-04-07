@@ -15,21 +15,21 @@
 ## Specify phone tech before including full_phone
 #$(call inherit-product, vendor/cm/config/gsm.mk)
 
-DEVICE_PATH := device/samsung/delos3geur
+DEVICE_PATH := device/nokia/normandy
 
 ## Inherit common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 ## Inherit device files
-$(call inherit-product, $(DEVICE_PATH)/delos3geur.mk)
+$(call inherit-product, $(DEVICE_PATH)/normandy.mk)
 
 ## Setup device configuration
-PRODUCT_NAME := cm_delos3geur
-PRODUCT_BRAND := samsung
-PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := GT-I8552
+PRODUCT_NAME := cm_normandy
+PRODUCT_BRAND := nokia
+PRODUCT_MANUFACTURER := nokia
+PRODUCT_MODEL := Nokia XL
 PRODUCT_RELEASE_NAME := GT-I8552
-PRODUCT_DEVICE := delos3geur
+PRODUCT_DEVICE := normandy
 
 ## Bootanimation
 TARGET_SCREEN_HEIGHT := 800

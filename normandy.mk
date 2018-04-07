@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/samsung/delos3geur
+DEVICE_PATH := device/nokia/normandy
 
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
@@ -37,4 +37,4 @@ ADDITIONAL_DEFAULT_PROPERTIES += persist.service.adb.enable=1
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml 
 
-$(call inherit-product, vendor/samsung/delos3geur/delos3geur-vendor.mk)
+$(call inherit-product, vendor/nokia/normandy/normandy-vendor.mk)

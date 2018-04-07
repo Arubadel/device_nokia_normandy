@@ -17,19 +17,19 @@
 
 include device/generic/msm7x27a/BoardConfigCommon.mk
 
-DEVICE_PATH := device/samsung/delos3geur
+DEVICE_PATH := device/nokia/normandy
 
 ## Platform
 TARGET_BOOTLOADER_BOARD_NAME := msm7x27a
 
 ## Kernel
-TARGET_KERNEL_CONFIG := delos_defconfig
+TARGET_KERNEL_CONFIG := normandy_null_defconfig
 
 ## Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 ## OTA assert
-TARGET_OTA_ASSERT_DEVICE := delos3geur,GT-I8552
+TARGET_OTA_ASSERT_DEVICE := normandy
 
 #Fstab 
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom

@@ -124,7 +124,7 @@ ifneq (\$(filter $DEVICE,\$(TARGET_DEVICE)),)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libaudcal
-LOCAL_MODULE_OWNER := samsung
+LOCAL_MODULE_OWNER := $VENDOR
 LOCAL_SRC_FILES := proprietary/lib/libaudcal.so
 LOCAL_MODULE_PATH := \$(TARGET_OUT_SHARED_LIBRARIES)
 LOCAL_MODULE_TAGS := optional
