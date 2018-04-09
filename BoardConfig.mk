@@ -33,3 +33,6 @@ TARGET_OTA_ASSERT_DEVICE := normandy
 
 #Fstab 
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
+
+# Display
+TARGET_HYBRID_DISPLAY := true
