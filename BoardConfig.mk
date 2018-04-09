@@ -15,8 +15,6 @@
 # BoardConfig.mk
 #
 
-include device/generic/msm7x27a/BoardConfigCommon.mk
-
 DEVICE_PATH := device/nokia/normandy
 
 ## Platform
@@ -36,3 +34,5 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 
 # Display
 TARGET_HYBRID_DISPLAY := true
+
+include device/generic/msm7x27a/BoardConfigCommon.mk
